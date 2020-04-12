@@ -1,0 +1,15 @@
+<form action="/contact" method="get">
+  <input
+    type="text"
+    name="memberrr"
+    value="<%= params[:memberrr] %>"
+    placeholder="Who are you looking for?"
+  >
+  <input type="submit">
+</form>
+
+<% @members.each do |member| %>
+<ul>
+  <li><%= member %></li>
+</ul>
+<% end %>
